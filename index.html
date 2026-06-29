@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shunya ECC — Mathematical Library</title>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='26' fill='none' stroke='%23D4A843' stroke-width='4'/%3E%3Cellipse cx='32' cy='32' rx='10' ry='17' fill='none' stroke='%23D4A843' stroke-width='3'/%3E%3Cline x1='10' y1='10' x2='54' y2='54' stroke='%23D4A843' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ░░ HEADER ░░ -->
+  <header class="header">
+    <div class="header-inner">
+
+      <div class="logo" title="Shunya ECC Mathematical Library">
+        <img src="logo.png" alt="Shunya ECC logo" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-name">Shunya <em>ECC</em></span>
+          <span class="logo-tagline">Mathematical Library</span>
+        </div>
+      </div>
+
+      <div class="header-right">
+        <div class="search-wrap">
+          <svg class="search-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          <input id="search-input" type="search" placeholder="Search titles, authors, tags…" autocomplete="off" aria-label="Search collection" />
+          <kbd class="search-kbd">⌘K</kbd>
+        </div>
+
+        <div class="type-filters" role="group" aria-label="Filter by type">
+          <button class="filter-pill active" data-type="all">All</button>
+          <button class="filter-pill" data-type="book">Books</button>
+          <button class="filter-pill" data-type="paper">Papers</button>
+          <button class="filter-pill" data-type="article">Articles</button>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ░░ LAYOUT ░░ -->
+  <div class="layout">
+
+    <aside class="sidebar" aria-label="Collection tree">
+      <div class="sidebar-head">
+        <span class="sidebar-label">Collections</span>
+        <button id="collapse-all" class="sidebar-action" title="Collapse all">
+          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M3 6L8 11L13 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <nav id="tree-nav" aria-label="Browse folders">
+        <div class="tree-skeleton">
+          <div class="skeleton-line" style="width:70%"></div>
+          <div class="skeleton-line" style="width:50%;margin-left:1rem"></div>
+          <div class="skeleton-line" style="width:60%"></div>
+          <div class="skeleton-line" style="width:45%;margin-left:1rem"></div>
+          <div class="skeleton-line" style="width:65%"></div>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main" id="main-content">
+
+      <nav class="breadcrumb" id="breadcrumb" aria-label="Breadcrumb">
+        <button class="crumb crumb-home" data-path="">
+          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M2 6.5L8 2L14 6.5V14H10V10H6V14H2V6.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+          Library
+        </button>
+      </nav>
+
+      <div class="section-header">
+        <h1 class="section-title" id="section-title">All Collections</h1>
+        <span class="item-count" id="item-count" aria-live="polite">—</span>
+      </div>
+
+      <div id="book-grid" class="book-grid" aria-label="Books and papers"></div>
+
+      <div id="empty-state" class="empty-state hidden" role="status">
+        <div class="empty-glyph">∅</div>
+        <p class="empty-title">Nothing found</p>
+        <p class="empty-sub">Try adjusting your search or filters.</p>
+      </div>
+
+      <div id="loading-state" class="loading-state">
+        <div class="spinner" aria-label="Loading…"></div>
+        <p>Loading collection…</p>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- ░░ PDF MODAL ░░ -->
+  <div id="pdf-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-book-title" hidden>
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-panel">
+
+      <div class="modal-header">
+        <div class="modal-meta">
+          <span id="modal-type-badge" class="type-badge">Book</span>
+          <h2 id="modal-book-title" class="modal-title">—</h2>
+          <p id="modal-author" class="modal-author">—</p>
+        </div>
+        <div class="modal-controls">
+          <a id="modal-open-tab" href="#" target="_blank" rel="noopener" class="btn btn-ghost">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M7 3H3V13H13V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 2H14V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="14" y1="2" x2="8" y2="8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            Open in tab
+          </a>
+          <a id="modal-download" href="#" download class="btn btn-gold">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M8 3V10M8 10L5 7M8 10L11 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3 13H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            Download
+          </a>
+          <button id="modal-close" class="btn btn-icon" aria-label="Close">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4 4L12 12M12 4L4 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="pdf-pane">
+          <iframe id="pdf-frame" title="PDF Viewer" allowfullscreen></iframe>
+        </div>
+        <aside class="book-details">
+          <section class="detail-section">
+            <h3 class="detail-heading">Description</h3>
+            <p id="detail-description" class="detail-text">—</p>
+          </section>
+          <section class="detail-section">
+            <h3 class="detail-heading">Details</h3>
+            <dl class="detail-list">
+              <dt>Author</dt> <dd id="dl-author">—</dd>
+              <dt>Year</dt>   <dd id="dl-year">—</dd>
+              <dt>Type</dt>   <dd id="dl-type">—</dd>
+              <dt>Pages</dt>  <dd id="dl-pages">—</dd>
+            </dl>
+          </section>
+          <section class="detail-section">
+            <h3 class="detail-heading">Source</h3>
+            <a id="modal-url" class="detail-url" href="#" target="_blank" rel="noopener">Open source URL</a>
+          </section>
+          <section class="detail-section" id="tags-section">
+            <h3 class="detail-heading">Tags</h3>
+            <div id="detail-tags" class="tag-cloud"></div>
+          </section>
+        </aside>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

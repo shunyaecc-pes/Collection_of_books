@@ -1,0 +1,12 @@
+{
+  "name": "shunya-ecc-library",
+  "version": "1.0.0",
+  "description": "Shunya ECC Mathematical Library — static GitHub Pages site",
+  "scripts": {
+    "generate": "node generate-manifest.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "MIT"
+}

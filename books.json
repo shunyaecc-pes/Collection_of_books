@@ -1,0 +1,218 @@
+[
+  {
+    "kind": "folder",
+    "name": "books",
+    "path": "books",
+    "children": [
+      {
+        "kind": "book",
+        "name": "Modern Algebra Section 4.6",
+        "path": "books/ModernAlgebraSection4.6",
+        "pdfUrl": "books/books/ModernAlgebraSection4.6/book.pdf",
+        "url": "books/books/ModernAlgebraSection4.6/book.pdf",
+        "title": "Modern Algebra Section 4.6",
+        "author": "Hudson & Silvester",
+        "description": "A snippet from Section 4.6 of Chapter 4 of 'Modern Algebra' by Hudson & Silvester. This excerpt reconstructs the lost 1895 work of Bach and Bernul on the Railway Points Problem, introducing an algebraic calculus of routes. It translates unidirectional railway switches into directed graphs and proves that the minimum number of switches required for a perfect n-track junction is exactly 2(n-1).",
+        "year": 1967,
+        "tags": [
+          "Transitive Relations",
+          "Directed Graphs",
+          "Strong Connectivity",
+          "Combinatorial Optimization",
+          "Railway Junctions"
+        ],
+        "type": "book",
+        "pages": 9
+      },
+      {
+        "kind": "book",
+        "name": "17-gon construction",
+        "path": "books/17-gon_construction",
+        "pdfUrl": "books/books/17-gon_construction/book.pdf",
+        "url": "books/books/17-gon_construction/book.pdf",
+        "title": "17-gon construction",
+        "description": "A classical Euclidean construction of a regular 17-gon",
+        "year": 1793,
+        "tags": [
+          "geometry",
+          "construction",
+          "number theory"
+        ],
+        "type": "paper"
+      },
+      {
+        "kind": "book",
+        "name": "A Mathematician's Apology",
+        "path": "books/A_Mathematician_s_Apology",
+        "pdfUrl": "books/books/A_Mathematician_s_Apology/book.pdf",
+        "url": "books/books/A_Mathematician_s_Apology/book.pdf",
+        "title": "A Mathematician's Apology",
+        "description": "Hardy's reflections on mathematics and mathematical life",
+        "year": 1940,
+        "tags": [
+          "mathematics",
+          "philosophy",
+          "history"
+        ],
+        "type": "book"
+      },
+      {
+        "kind": "book",
+        "name": "Analysis of the Infinite",
+        "path": "books/Analysis_of_the_Infinite",
+        "pdfUrl": "books/books/Analysis_of_the_Infinite/book.pdf",
+        "url": "books/books/Analysis_of_the_Infinite/book.pdf",
+        "title": "Analysis of the Infinite",
+        "description": "Euler's foundational work translated and annotated",
+        "year": 1988,
+        "tags": [
+          "history",
+          "analysis",
+          "infinite"
+        ],
+        "type": "book"
+      },
+      {
+        "kind": "book",
+        "name": "Gödel's Proof",
+        "path": "books/G_del_s_Proof",
+        "pdfUrl": "books/books/G_del_s_Proof/book.pdf",
+        "url": "books/books/G_del_s_Proof/book.pdf",
+        "title": "Gödel's Proof",
+        "description": "A readable account of Gödel's incompleteness theorem",
+        "year": 2001,
+        "tags": [
+          "logic",
+          "incompleteness",
+          "philosophy"
+        ],
+        "type": "book"
+      },
+      {
+        "kind": "book",
+        "name": "Nonlinear Dynamics and Chaos",
+        "path": "books/Nonlinear_Dynamics_and_Chaos",
+        "pdfUrl": "books/books/Nonlinear_Dynamics_and_Chaos/book.pdf",
+        "url": "books/books/Nonlinear_Dynamics_and_Chaos/book.pdf",
+        "title": "Nonlinear Dynamics and Chaos",
+        "description": "A standard introduction to nonlinear dynamics and chaos",
+        "year": 2018,
+        "tags": [
+          "dynamics",
+          "chaos",
+          "applied mathematics"
+        ],
+        "type": "book"
+      },
+      {
+        "kind": "book",
+        "name": "Ramanujan: Twelve Lectures on Subjects Suggested by His Life and Work",
+        "path": "books/Ramanujan_Twelve_Lectures_on_Subjects_Suggested_by_His_Life_and_Work",
+        "pdfUrl": "books/books/Ramanujan_Twelve_Lectures_on_Subjects_Suggested_by_His_Life_and_Work/book.pdf",
+        "url": "books/books/Ramanujan_Twelve_Lectures_on_Subjects_Suggested_by_His_Life_and_Work/book.pdf",
+        "title": "Ramanujan: Twelve Lectures on Subjects Suggested by His Life and Work",
+        "description": "A classic collection of lectures on Ramanujan's ideas",
+        "year": 1957,
+        "tags": [
+          "number theory",
+          "analysis",
+          "history"
+        ],
+        "type": "book"
+      }
+    ]
+  },
+  {
+    "kind": "folder",
+    "name": "articles",
+    "path": "articles",
+    "children": [
+      {
+        "kind": "book",
+        "name": "CS217 Lecture 5",
+        "path": "articles/CS217_Lecture_5",
+        "pdfUrl": "books/articles/CS217_Lecture_5/book.pdf",
+        "url": "books/articles/CS217_Lecture_5/book.pdf",
+        "title": "CS217 Lecture 5",
+        "description": "Lecture notes on a computer science mathematics topic",
+        "year": 2024,
+        "tags": [
+          "lecture notes",
+          "algorithms"
+        ],
+        "type": "article"
+      }
+    ]
+  },
+  {
+    "kind": "folder",
+    "name": "papers",
+    "path": "papers",
+    "children": [
+      {
+        "kind": "book",
+        "name": "A. M. Turing Paper",
+        "path": "papers/A._M._Turing_Paper",
+        "pdfUrl": "books/papers/A._M._Turing_Paper/book.pdf",
+        "url": "books/papers/A._M._Turing_Paper/book.pdf",
+        "title": "A. M. Turing Paper",
+        "description": "A foundational paper on computation and machine intelligence",
+        "year": 1936,
+        "tags": [
+          "computation",
+          "logic",
+          "theory"
+        ],
+        "type": "paper"
+      },
+      {
+        "kind": "book",
+        "name": "Gödel's Incompleteness Theorem",
+        "path": "papers/G_del_s_Incompleteness_Theorem",
+        "pdfUrl": "books/papers/G_del_s_Incompleteness_Theorem/book.pdf",
+        "url": "books/papers/G_del_s_Incompleteness_Theorem/book.pdf",
+        "title": "Gödel's Incompleteness Theorem",
+        "description": "An English translation and explanation of Gödel's paper",
+        "year": 1931,
+        "tags": [
+          "logic",
+          "incompleteness",
+          "proof"
+        ],
+        "type": "paper"
+      },
+      {
+        "kind": "book",
+        "name": "The 17-gon",
+        "path": "papers/The_17-gon",
+        "pdfUrl": "books/papers/The_17-gon/book.pdf",
+        "url": "books/papers/The_17-gon/book.pdf",
+        "title": "The 17-gon",
+        "description": "A concise note on the regular 17-gon and its constructibility",
+        "year": 2014,
+        "tags": [
+          "geometry",
+          "constructibility",
+          "mathematics"
+        ],
+        "type": "paper"
+      },
+      {
+        "kind": "book",
+        "name": "Turing",
+        "path": "papers/Turing",
+        "pdfUrl": "books/papers/Turing/book.pdf",
+        "url": "books/papers/Turing/book.pdf",
+        "title": "Turing",
+        "description": "A classic paper on computation and machine intelligence",
+        "year": 1936,
+        "tags": [
+          "computation",
+          "logic",
+          "automata"
+        ],
+        "type": "paper"
+      }
+    ]
+  }
+]

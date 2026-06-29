@@ -1,0 +1,9 @@
+{
+  "title": "Introduction to Topology",
+  "author": "Bert Mendelson",
+  "description": "A concise, self-contained introduction to point-set topology, covering metric spaces, topological spaces, and continuous functions. Ideal for undergraduates encountering the subject for the first time.",
+  "year": 1990,
+  "type": "book",
+  "tags": ["topology", "metric spaces", "analysis", "point-set"],
+  "pages": 206
+}
