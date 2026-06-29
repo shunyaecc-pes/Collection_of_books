@@ -1,11 +1,12 @@
 {
   "title": "17-gon construction",
-  "description": "A classical Euclidean construction of a regular 17-gon",
+  "description": "A reconstructed treatment of the classical compass-and-straightedge construction for the regular 17-gon, revealing the algebraic principles behind constructible polygons.",
   "year": 1793,
   "type": "paper",
   "tags": [
     "geometry",
     "construction",
     "number theory"
-  ]
+  ],
+  "author": "Classical geometry tradition"
 }

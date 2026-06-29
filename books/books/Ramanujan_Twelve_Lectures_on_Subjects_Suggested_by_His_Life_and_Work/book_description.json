@@ -1,11 +1,12 @@
 {
   "title": "Ramanujan: Twelve Lectures on Subjects Suggested by His Life and Work",
-  "description": "A classic collection of lectures on Ramanujan's ideas",
+  "description": "A celebrated set of lectures by G. H. Hardy inspired by Srinivasa Ramanujan's work, offering a coherent exposition of the theory and ideas behind Ramanujan's mathematical legacy.",
   "year": 1957,
   "type": "book",
   "tags": [
     "number theory",
     "analysis",
     "history"
-  ]
+  ],
+  "author": "G. H. Hardy"
 }

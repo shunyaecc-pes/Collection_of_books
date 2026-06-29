@@ -1,11 +1,12 @@
 {
   "title": "Analysis of the Infinite",
-  "description": "Euler's foundational work translated and annotated",
+  "description": "A modern annotated edition of Euler's seminal 1748 work, tracing the birth of analysis and the infinite series that laid the foundations of classical calculus.",
   "year": 1988,
   "type": "book",
   "tags": [
     "history",
     "analysis",
     "infinite"
-  ]
+  ],
+  "author": "Leonhard Euler; translated and annotated edition"
 }

@@ -1,11 +1,12 @@
 {
-  "title": "G\u00f6del's Proof",
-  "description": "A readable account of G\u00f6del's incompleteness theorem",
+  "title": "Gödel's Proof",
+  "description": "An accessible introduction to Kurt Gödel's incompleteness theorems, addressing both the technical proofs and their philosophical implications for formal systems.",
   "year": 2001,
   "type": "book",
   "tags": [
     "logic",
     "incompleteness",
     "philosophy"
-  ]
+  ],
+  "author": "Ernest Nagel & James R. Newman"
 }

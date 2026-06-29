@@ -1,11 +1,12 @@
 {
   "title": "Nonlinear Dynamics and Chaos",
-  "description": "A standard introduction to nonlinear dynamics and chaos",
+  "description": "A practical and intuitive introduction to nonlinear dynamical systems and chaos theory, with applications spanning physics, biology, chemistry, and engineering.",
   "year": 2018,
   "type": "book",
   "tags": [
     "dynamics",
     "chaos",
     "applied mathematics"
-  ]
+  ],
+  "author": "Steven H. Strogatz"
 }

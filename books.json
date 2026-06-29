@@ -31,7 +31,8 @@
         "pdfUrl": "books/books/17-gon_construction/book.pdf",
         "url": "books/books/17-gon_construction/book.pdf",
         "title": "17-gon construction",
-        "description": "A classical Euclidean construction of a regular 17-gon",
+        "author": "Classical geometry tradition",
+        "description": "A reconstructed treatment of the classical compass-and-straightedge construction for the regular 17-gon, revealing the algebraic principles behind constructible polygons.",
         "year": 1793,
         "tags": [
           "geometry",
@@ -47,7 +48,8 @@
         "pdfUrl": "books/books/A_Mathematician_s_Apology/book.pdf",
         "url": "books/books/A_Mathematician_s_Apology/book.pdf",
         "title": "A Mathematician's Apology",
-        "description": "Hardy's reflections on mathematics and mathematical life",
+        "author": "G. H. Hardy",
+        "description": "G. H. Hardy's classic essay defending pure mathematics, combining intellectual history with a personal meditation on beauty, value, and the life of the mathematical mind.",
         "year": 1940,
         "tags": [
           "mathematics",
@@ -63,7 +65,8 @@
         "pdfUrl": "books/books/Analysis_of_the_Infinite/book.pdf",
         "url": "books/books/Analysis_of_the_Infinite/book.pdf",
         "title": "Analysis of the Infinite",
-        "description": "Euler's foundational work translated and annotated",
+        "author": "Leonhard Euler; translated and annotated edition",
+        "description": "A modern annotated edition of Euler's seminal 1748 work, tracing the birth of analysis and the infinite series that laid the foundations of classical calculus.",
         "year": 1988,
         "tags": [
           "history",
@@ -79,7 +82,8 @@
         "pdfUrl": "books/books/G_del_s_Proof/book.pdf",
         "url": "books/books/G_del_s_Proof/book.pdf",
         "title": "Gödel's Proof",
-        "description": "A readable account of Gödel's incompleteness theorem",
+        "author": "Ernest Nagel & James R. Newman",
+        "description": "An accessible introduction to Kurt Gödel's incompleteness theorems, addressing both the technical proofs and their philosophical implications for formal systems.",
         "year": 2001,
         "tags": [
           "logic",
@@ -95,7 +99,8 @@
         "pdfUrl": "books/books/Nonlinear_Dynamics_and_Chaos/book.pdf",
         "url": "books/books/Nonlinear_Dynamics_and_Chaos/book.pdf",
         "title": "Nonlinear Dynamics and Chaos",
-        "description": "A standard introduction to nonlinear dynamics and chaos",
+        "author": "Steven H. Strogatz",
+        "description": "A practical and intuitive introduction to nonlinear dynamical systems and chaos theory, with applications spanning physics, biology, chemistry, and engineering.",
         "year": 2018,
         "tags": [
           "dynamics",
@@ -111,7 +116,8 @@
         "pdfUrl": "books/books/Ramanujan_Twelve_Lectures_on_Subjects_Suggested_by_His_Life_and_Work/book.pdf",
         "url": "books/books/Ramanujan_Twelve_Lectures_on_Subjects_Suggested_by_His_Life_and_Work/book.pdf",
         "title": "Ramanujan: Twelve Lectures on Subjects Suggested by His Life and Work",
-        "description": "A classic collection of lectures on Ramanujan's ideas",
+        "author": "G. H. Hardy",
+        "description": "A celebrated set of lectures by G. H. Hardy inspired by Srinivasa Ramanujan's work, offering a coherent exposition of the theory and ideas behind Ramanujan's mathematical legacy.",
         "year": 1957,
         "tags": [
           "number theory",

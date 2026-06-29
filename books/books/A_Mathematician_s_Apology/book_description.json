@@ -1,11 +1,12 @@
 {
   "title": "A Mathematician's Apology",
-  "description": "Hardy's reflections on mathematics and mathematical life",
+  "description": "G. H. Hardy's classic essay defending pure mathematics, combining intellectual history with a personal meditation on beauty, value, and the life of the mathematical mind.",
   "year": 1940,
   "type": "book",
   "tags": [
     "mathematics",
     "philosophy",
     "history"
-  ]
+  ],
+  "author": "G. H. Hardy"
 }
